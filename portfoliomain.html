@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aryan Agrawal | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafc;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* ===== Navbar ===== */
+    nav {
+      background: #ffffff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-bottom: 4px solid;
+      border-image: linear-gradient(to right, #007bff, #00c6ff) 1;
+    }
+
+    nav h1 {
+      font-size: 22px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: 500;
+      padding: 8px 16px;
+      background: #fdfdfd;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background: #007bff;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .phone {
+      font-weight: 500;
+      color: #333;
+      background: #eef3ff;
+      padding: 6px 12px;
+      border-radius: 8px;
+    }
+
+    /* ===== Hero Section ===== */
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+    }
+
+    header h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ===== Sections ===== */
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: #fff;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    ul li:hover {
+      transform: scale(1.03);
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Contact Section ===== */
+    .contact a {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* ===== Scroll Animation ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-in-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Aryan Agrawal</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="phone">📞 +91 84321 29761</li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h2>Hi, I'm Aryan Agrawal 👋</h2>
+    <p>Software Developer | AI Research Enthusiast | Tech & Business Explorer</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>I’m an aspiring developer passionate about algorithms, AI, and entrepreneurship. Currently pursuing B.Tech in Computer Science and Business Systems at SRM University (2023–2027). I enjoy solving real-world problems using technology and exploring creative solutions through coding and innovation.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://github.com/yourusername/Banking-Management-System" target="_blank">🏦 Banking Management System (C++)</a> — Built a console-based system with OOP and file handling.</li>
+      <li><a href="https://github.com/yourusername/AI-Dietitian" target="_blank">🥗 AI Dietitian (Python, ML)</a> — Personalized diet recommendations using AI.</li>
+      <li><a href="https://github.com/yourusername/Mini-Chatbot" target="_blank">💬 Mini Chatbot (C++)</a> — Simple chatbot built using basic text recognition.</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in contact">
+    <h2>Contact</h2>
+    <p>📧 <a href="mailto:aryanagrawal10x@gmail.com">aryanagrawal10x@gmail.com</a></p>
+    <p>💼 <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a></p>
+    <p>💻 <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+  </section>
+
+  <footer>
+    © 2025 Aryan Agrawal | Built with ❤️ and HTML, CSS, JS
+  </footer>
+
+  <script>
+    // Scroll Fade Animation
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2 };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    fadeElements.forEach(el => appearOnScroll.observe(el));
+  </script>
+</body>
+</html>
